@@ -1,0 +1,13 @@
+--- driver-i386.c	2012-09-13 02:06:42.000000000 +1000
++++ driver-i386.c.new	2013-01-10 21:51:03.423333675 +1100
+@@ -588,6 +588,10 @@
+ 	  /* Sandy Bridge.  */
+ 	  cpu = "corei7-avx";
+ 	  break;
++    case 0x3a:
++      /* Ivy bridge */
++      cpu = "core-avx-i";
++      break;
+ 	case 0x17:
+ 	case 0x1d:
+ 	  /* Penryn.  */
